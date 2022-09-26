@@ -11,105 +11,102 @@ import javax.validation.constraints.Size;
 
 @Entity
 public class Todo {
-	
+
 	@Id
 	@GeneratedValue
 	@Column(name = "id", length = 65535)
-    private int id;
-    private String user1;
-    
-    @Size(min=10, message="Enter at least 10 Characters...")
-    @NotEmpty
-    private String desc;
-    
-    private Date targetDate;
-    private boolean isDone;
+	private int id;
+	private String user1;
 
-    
-    public Todo() {
+	@Size(min = 10, message = "Enter at least 10 Characters...")
+	@NotEmpty
+	private String desc;
+
+	private Date targetDate;
+	private boolean isDone;
+
+	public Todo() {
 		super();
-}
+	}
 
-    public Todo(int id, String user, String desc, Date targetDate,
-            boolean isDone) {
-        super();
-        this.id = id;
-        this.user1 = user;
-        this.desc = desc;
-        this.targetDate = targetDate;
-        this.isDone = isDone;
-    }
-    
-    public int getId() {
-        return id;
-    }
+	public Todo(int id, String user, String desc, Date targetDate, boolean isDone) {
+		super();
+		this.id = id;
+		this.user1 = user;
+		this.desc = desc;
+		this.targetDate = targetDate;
+		this.isDone = isDone;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public String getUser() {
-        return user1;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public void setUser(String user) {
-        this.user1 = user;
-    }
+	public String getUser() {
+		return user1;
+	}
 
-    public String getDesc() {
-        return desc;
-    }
+	public void setUser(String user) {
+		this.user1 = user;
+	}
 
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
+	public String getDesc() {
+		return desc;
+	}
 
-    public Date getTargetDate() {
-        return targetDate;
-    }
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
 
-    public void setTargetDate(Date targetDate) {
-        this.targetDate = targetDate;
-    }
+	public Date getTargetDate() {
+		return targetDate;
+	}
 
-    public boolean isDone() {
-        return isDone;
-    }
+	public void setTargetDate(Date targetDate) {
+		this.targetDate = targetDate;
+	}
 
-    public void setDone(boolean isDone) {
-        this.isDone = isDone;
-    }
+	public boolean isDone() {
+		return isDone;
+	}
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = (int) (prime * result + id);
-        return result;
-    }
+	public void setDone(boolean isDone) {
+		this.isDone = isDone;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        Todo other = (Todo) obj;
-        if (id != other.id) {
-            return false;
-        }
-        return true;
-    }
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
 
-    @Override
-    public String toString() {
-        return String.format(
-                "Todo [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id,
-                user1, desc, targetDate, isDone);
-    }
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		Todo other = (Todo) obj;
+		if (id != other.id) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("Todo [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id, user1, desc, targetDate,
+				isDone);
+	}
 }

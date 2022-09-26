@@ -8,20 +8,19 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @SuppressWarnings("deprecation")
 @Configuration
-public class SecurityConfiuration extends WebSecurityConfigurerAdapter{
+public class SecurityConfiuration extends WebSecurityConfigurerAdapter {
 	// Create Users- in28minutes/dummy
 	// Create a Login form
 	@Autowired
-	public void configureGlobalSecurity(AuthenticationManagerBuilder auth)
-			throws Exception {
-		auth.inMemoryAuthentication().passwordEncoder(org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance()).withUser("in28Minutes").password("dummy")
-				.roles("USER", "ADMIN");
+	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
+		auth.inMemoryAuthentication()
+				.passwordEncoder(org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance())
+				.withUser("in28Minutes").password("dummy").roles("USER", "ADMIN");
 	}
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/login").permitAll()
-				.antMatchers("/", "/*todo*/**").access("hasRole('USER')").and()
-				.formLogin();
+		http.authorizeRequests().antMatchers("/login").permitAll().antMatchers("/", "/*todo*/**")
+				.access("hasRole('USER')").and().formLogin();
 	}
 }

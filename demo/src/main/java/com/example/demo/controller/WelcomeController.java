@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
 import com.example.demo.web.model.Todo;
-import com.example.demo.web.model.web.service.TodoService;
 import com.example.demo.web.service.TodoRepository;
 
 @Controller
@@ -43,10 +43,9 @@ public class WelcomeController {
 //		model.put("age", age);
 //		return age;
 //	}
-	
+
 	@Autowired
 	TodoRepository repository;
-	
 
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
