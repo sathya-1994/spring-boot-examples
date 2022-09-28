@@ -8,5 +8,5 @@ import com.example.demo.web.model.Todo;
 
 public interface TodoRepository extends JpaRepository<Todo, Integer> {
 
-	List<Todo> findByUser1(String user1);
+	List<Todo> findByUser(String user);
 }

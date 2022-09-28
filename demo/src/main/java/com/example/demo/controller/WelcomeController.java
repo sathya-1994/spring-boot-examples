@@ -65,7 +65,7 @@ public class WelcomeController {
 	public String showTodoPage(ModelMap model) {
 		String name = getUserName();
 		// model.put("todos", service.retrieveTodos(name));
-		model.put("todos", repository.findByUser1(name));
+		model.put("todos", repository.findByUser(name));
 		return "list-todos";
 	}
 

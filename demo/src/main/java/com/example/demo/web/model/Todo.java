@@ -16,7 +16,9 @@ public class Todo {
 	@GeneratedValue
 	@Column(name = "id", length = 65535)
 	private int id;
-	private String user1;
+	
+	@Column(name = "UserVal")
+	private String user;
 
 	@Size(min = 10, message = "Enter at least 10 Characters...")
 	@NotEmpty
@@ -32,7 +34,7 @@ public class Todo {
 	public Todo(int id, String user, String desc, Date targetDate, boolean isDone) {
 		super();
 		this.id = id;
-		this.user1 = user;
+		this.user = user;
 		this.desc = desc;
 		this.targetDate = targetDate;
 		this.isDone = isDone;
@@ -47,11 +49,11 @@ public class Todo {
 	}
 
 	public String getUser() {
-		return user1;
+		return user;
 	}
 
 	public void setUser(String user) {
-		this.user1 = user;
+		this.user = user;
 	}
 
 	public String getDesc() {
@@ -106,7 +108,7 @@ public class Todo {
 
 	@Override
 	public String toString() {
-		return String.format("Todo [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id, user1, desc, targetDate,
+		return String.format("Todo [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id, user, desc, targetDate,
 				isDone);
 	}
 }
