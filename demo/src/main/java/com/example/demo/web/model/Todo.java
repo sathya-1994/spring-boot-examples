@@ -17,7 +17,7 @@ public class Todo {
 	@Column(name = "id", length = 65535)
 	private int id;
 	
-	@Column(name = "UserVal")
+	@Column(name = "userField")
 	private String user;
 
 	@Size(min = 10, message = "Enter at least 10 Characters...")

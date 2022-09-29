@@ -15,7 +15,7 @@ public class SecurityConfiuration extends WebSecurityConfigurerAdapter {
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication()
 				.passwordEncoder(org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance())
-				.withUser("in28Minutes").password("dummy").roles("USER", "ADMIN");
+				.withUser("in28minutes").password("dummy").roles("USER", "ADMIN");
 	}
 
 	@Override
