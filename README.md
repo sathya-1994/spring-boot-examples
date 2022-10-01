@@ -20,7 +20,7 @@ This repository contains cool things about Spring boot Spring Boot and Starter P
 - A web application to manage our todos
 - A basic REST Service to manage questions of a survey
 
-##Spring Boot topics covered
+## Spring Boot topics covered
 - Basics of Spring Boot
 - Basics of Auto Configuration and Spring Boot Magic
 - Spring Boot Starter Projects
