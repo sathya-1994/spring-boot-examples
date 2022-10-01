@@ -53,3 +53,9 @@ This repository contains cool things about Spring boot Spring Boot and Starter P
 - Choose the Spring Boot Application file (search for @SpringBootApplication)
 - Right Click on the file and Run as Java Application
 - You are all Set
+	
+#### first-springboot-project:
+- Java main class: com.example.demo.DemoApplication
+- Todo  application login URL: http://localhost:8080/login
+- User Id: ```in28minutes```
+- Password: ```dummy```
