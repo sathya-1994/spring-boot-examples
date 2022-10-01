@@ -57,6 +57,7 @@ class SurveyControllerIT {
 
 		header.setAccept(Arrays.asList(org.springframework.http.MediaType.APPLICATION_JSON));
 
+		@SuppressWarnings("rawtypes")
 		HttpEntity entity = new HttpEntity<>(null, header);
 		ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
 		String expectedStr = "{\"id\":\"Question1\",\"description\":\"Largest Country in the World\",\"correctAnswer\":\"Russia\",\"options\":[\"India\",\"Russia\",\"United States\",\"China\"]}";

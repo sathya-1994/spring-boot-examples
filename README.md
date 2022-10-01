@@ -40,6 +40,8 @@ This repository contains cool things about Spring boot Spring Boot and Starter P
 - Spring Boot Actuator
 - Spring Security
 - Spring Boot Developer Tools and LiveReload
+- Unit Testing with JUnit
+- Mocking with Mockito (Integration testing)
 
 ## Running Examples
 - Download the zip or clone the Git repository.
