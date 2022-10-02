@@ -63,6 +63,8 @@ This repository contains cool things about Spring boot Spring Boot and Starter P
 
 #### second-springboot-project: REST with Spring Boot(Spring Boot REST API)
 - Java main class: com.in28minutes.springboot.Application
+- Run Junits using com.in28minutes.springboot.controller.SurveyControllerTest class
+- Run integration test using com.in28minutes.springboot.controller.SurveyControllerIT class
 - Survey Questionnaire Data
 
 ```
