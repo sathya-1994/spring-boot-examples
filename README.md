@@ -92,7 +92,7 @@ surveys.add(survey);
 
 - Authorization - Basic YWRtaW46cGFzc3dvcmQ=
 
-##### GET
+#### GET
 
 - http://localhost:8080/surveys
 - http://localhost:8080/surveys/Survey1
@@ -100,7 +100,7 @@ surveys.add(survey);
 - http://localhost:8080/surveys/Survey1/questions/Question1
 - http://localhost:8080/userDetailses?size=1
 
-###### Response
+#### Response
 
 ```
 [
@@ -148,11 +148,11 @@ surveys.add(survey);
 
 ```
 
-##### DELETE 
+#### DELETE 
 
 - http://localhost:8080/surveys/Survey1/questions/Question1
 
-###### POST
+#### POST
 
 **URL**: http://localhost:8080/surveys/Survey1/questions/
 **Header**: Content-Type:application/json
@@ -183,7 +183,7 @@ surveys.add(survey);
 ```
 
 
-###### PUT
+#### PUT
 
 **URL**: http://localhost:8080/surveys/Survey1/questions/Question1
 **Header**: Content-Type:application/json
