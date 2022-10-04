@@ -10,9 +10,7 @@ spring boot example project with java
 - Remember: Spring Boot 3+ works only with Java 17+
 
 ### Introduction
-Spring Boot has a lot of magic going for it. 
-
-Developing applications with it is cool and fun.
+Spring Boot has a lot of magic going for it. Developing applications with it is cool and fun.
 
 Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can “just run”. Most Spring Boot applications need very little Spring configuration.
 
