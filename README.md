@@ -55,14 +55,14 @@ This repository contains cool things about Spring boot Spring Boot and Starter P
 - You are all Set
 	
 #### first-springboot-project:
-- Java main class: com.example.demo.DemoApplication
+- Java main method: com.example.demo.DemoApplication.main(String[])
 - Todo  application login URL: http://localhost:8080/login
 - User Id: ```in28minutes```
 - Password: ```dummy```
 - Note: Login credentials can configured using com.example.demo.web.security.SecurityConfiuration class
 
 #### second-springboot-project: REST with Spring Boot(Spring Boot REST API)
-- Java main class: com.in28minutes.springboot.Application
+- Java main method: com.in28minutes.springboot.Application.main(String[])
 - Run Junits using com.in28minutes.springboot.controller.SurveyControllerTest class
 - Run integration test using com.in28minutes.springboot.controller.SurveyControllerIT class
 - Survey Questionnaire Data
