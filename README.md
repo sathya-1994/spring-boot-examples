@@ -16,7 +16,7 @@ Developing applications with it is cool and fun.
 
 Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can “just run”. Most Spring Boot applications need very little Spring configuration.
 
-This repository contains cool things about Spring boot Spring Boot and Starter Projects (2 projects).
+This repository contains cool things about Spring boot and Spring Boot Starter projects (2 projects).
 - A web application to manage our todos
 - A basic REST Service to manage questions of a survey
 
